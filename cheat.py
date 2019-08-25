@@ -18,5 +18,6 @@ try:
 			print("[{0}] increment freezes! you've added {1} trees to be planted.".format(time_today, total_trees))
 		#time.sleep(1); no delay to speed up
 except:
-	with open("scores.log","a+") as score:
-		score.write("{0}\n".format(total_trees))
+	with open("scores.log","a+") as scored:
+		scored.write("{0}\n".format(total_trees))
+	print("saved!!!! {0} total.".format(total_trees))
